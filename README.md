@@ -12,7 +12,7 @@ No futuro, a aplicação evoluirá para um sistema de avaliação, permitindo o 
 
 ## 🚧 Próximas Funcionalidades (Roadmap)
 
-* [ ] Scroll infinito, para visualização de mais obras.
+* [X] Scroll infinito, para visualização de mais obras.
 * [ ] Implementar barra de pesquisa para buscar filmes específicos pelo título.
 * [ ] Desenvolver o CRUD completo (Adicionar filmes à lista pessoal, editar e remover).
 * [ ] Criar sistema de avaliação (notas e resenhas personalizadas).
