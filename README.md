@@ -32,15 +32,22 @@ A arquitetura do projeto foi pensada para facilitar a manutenção:
 
 ```text
 movies-app/
-├── public/            # Imagens, ícones e assets estáticos
+├── public/                # Assets estáticos (ícones, logos e imagens)
 ├── src/
-│   ├── app/           # Rotas principais da aplicação (Next.js App Router)
-│   ├── components/    # Componentes React reutilizáveis (Ex: MovieCard, Navbar)
-│   ├── services/      # Configuração do Axios e funções de chamada à API
-│   ├── styles/        # Arquivos globais e módulos de estilização em Sass (.scss)
-│   └── types/         # Definições de tipagem e interfaces do TypeScript
-├── .env.local         # Variáveis de ambiente locais (não enviadas ao repositório)
-└── package.json       # Gerenciamento de dependências e scripts de execução
+│   ├── app/               # Roteamento (App Router), layouts e estilos globais
+│   │   ├── globals.scss   # Estilização global da aplicação
+│   │   ├── layout.tsx     # Layout principal (Root Layout)
+│   │   └── page.tsx       # Página inicial (Home)
+│   ├── components/        # Componentes reutilizáveis e autocontidos
+│   │   ├── MovieCard/     # Card de exibição do filme
+│   │   ├── MovieList/     # Listagem/Grid de filmes
+│   │   ├── Navbar/        # Barra de navegação superior
+│   │   └── StarRating/    # Componente de avaliação (estrelas)
+│   └── types/             # Definições de interfaces e tipos TypeScript
+├── eslint.config.mjs      # Configurações de linting (Padronização de código)
+├── next.config.ts         # Configurações do framework Next.js
+├── package.json           # Dependências e scripts do projeto
+└── postcss.config.mjs     # Configuração do PostCSS para processamento de estilos
 ```
 
 ## ⚙️ Como executar o projeto localmente
